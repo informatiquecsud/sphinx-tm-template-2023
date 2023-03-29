@@ -9,7 +9,7 @@ class DocumentInfos:
     seminary_title = u'Développement Web'
     tutor = u"Cédric Donner"
     release = "(Version intermédiaire)"
-    repository_url = "https://github.com/username/repo"
+    repository_url = "https://github.com/informatiquecsud/sphinx-tm-template-2023"
 
     @classmethod
     def date(cls):
