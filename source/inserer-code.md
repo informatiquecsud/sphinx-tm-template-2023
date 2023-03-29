@@ -87,3 +87,46 @@ print(pi)
 ```
 ````
 
+### Directive `literalinclude`
+
+La directive `literalinclude` permet d'inclure du code source depuis un fichier
+externe. Cela est très pratique dans les cas suivants
+
+- Pour intégrer tout un fichier source en annexe sans avoir à copier le code
+  directement dans le fichier Markdown.
+- Maintenir le code inséré dans le texte à jour avec le code réellement utilisé
+  dans le projet sans avoir à faire sans arrêt du copier-coller. 
+- Lorsque le fichier contient beaucoup de lignes
+
+```{note}
+Les options de la directive sont listées sur la page de la documentation https://devopstutodoc.readthedocs.io/en/stable/documentation/doc_generators/sphinx/rest_sphinx/code/literalinclude/literalinclude.html#lines-xxx
+```
+
+`````{admonition} Exemple
+Pour insérer les lignes 1 à 10 du fichier `conf.py` en insérant les numéros de lignes, en mettant en évidence les lignes 3 à 5 et en rajoutant la légende `requirements.txt`, il suffit d'utiliser la syntaxe suivante:
+
+````md
+```{literalinclude} requirements.txt
+---
+linenos: true
+language: txt
+lines: 1-10
+emphasize-lines: 3-5
+caption: requirements.txt
+---
+```
+````
+
+Cela produit le résultat suivant:
+
+```{literalinclude} ../requirements.txt
+---
+linenos: true
+language: txt
+lines: 1-10
+emphasize-lines: 3-5
+caption: requirements.txt
+---
+```
+
+`````

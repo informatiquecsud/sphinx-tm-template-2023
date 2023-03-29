@@ -15,6 +15,7 @@ Rédaction d'un rapport écrit avec Sphinx
     mise-en-route.md
     directives-roles-sphinx.md
     inserer-code.md
+    inserer-maths.md
     annexes.md
     ajouter-declaration-personnelle.md
     conclusion.md
