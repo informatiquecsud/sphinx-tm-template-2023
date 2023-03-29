@@ -99,7 +99,7 @@ html_theme_options = {
 ####### MyST configuration
 myst_enable_extensions = [
     "colon_fence",
-    #"linkify",
+    "linkify",
     "dollarmath",
     "amsmath",
     "smartquotes",

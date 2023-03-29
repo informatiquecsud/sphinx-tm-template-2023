@@ -31,10 +31,7 @@ livepdf:
 	watchmedo shell-command \
 		--patterns="*.png;*.rst;*.md;conf.py" \
 		--recursive \
-		--command='make tmpdf && make getpdf'	
-surge:
-	surge build/html/ ini-prog.surge.sh
-
+		--command='make tmpdf && make getpdf'
 		
 spelling:
 	@echo Serving pages on $(SPHINX_URL)
@@ -59,3 +56,7 @@ getpdf: tmpdf
 
 surge: html
 	surge build/html csud-sphinx-tm.surge.sh
+
+
+patch:
+	
