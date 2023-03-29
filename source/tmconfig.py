@@ -8,7 +8,7 @@ class DocumentInfos:
     month = u'Mars'
     seminary_title = u'Développement Web'
     tutor = u"Cédric Donner"
-    release = "(Version intermédiaire)"
+    release = ""
     repository_url = "https://github.com/informatiquecsud/sphinx-tm-template-2023"
 
     @classmethod
