@@ -11,10 +11,9 @@ Rédaction d'un rapport écrit avec Sphinx
     :maxdepth: 2
     :caption: Table des matières
 
-    introduction.rst
-    chapitre-01.rst
-    chapitre-02.md
-    conclusion.rst
+    introduction.md
+    mise-en-route.md
+    conclusion.md
     references.rst
 
 
