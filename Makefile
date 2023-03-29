@@ -54,7 +54,7 @@ tmpdf:
 getpdf: tmpdf
 	cp -f build/latex/$(TARGET).pdf .
 
-surge: html
+surge: clean html
 	surge build/html csud-sphinx-tm.surge.sh
 
 
