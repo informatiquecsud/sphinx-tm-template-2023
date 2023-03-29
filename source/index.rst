@@ -15,13 +15,15 @@ Rédaction d'un rapport écrit avec Sphinx
     mise-en-route.md
     directives-roles-sphinx.md
     inserer-code.md
+    annexes.md
+    ajouter-declaration-personnelle.md
     conclusion.md
     references.rst
     declaration-honneur.md
 
 
-    Indices and tables
-    ==================
+Indices and tables
+==================
 
-    * :ref:`genindex`
-    * :ref:`search`
+* :ref:`genindex`
+* :ref:`search`
