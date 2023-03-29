@@ -13,6 +13,8 @@ Rédaction d'un rapport écrit avec Sphinx
 
     introduction.md
     mise-en-route.md
+    directives-roles-sphinx.md
+    inserer-code.md
     conclusion.md
     references.rst
     declaration-honneur.md
