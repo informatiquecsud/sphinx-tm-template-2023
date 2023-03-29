@@ -10,6 +10,5 @@ Les principales directives Sphinx sont présentées (avec la syntaxe Restructure
 ## Directives
 
 Le système Sphinx met à disposition de nombreuses directives permettant
-d'intégrer des éléments dans la documentation. 
-
-
+d'intégrer des éléments dans la documentation. La correspondance entre la
+syntaxe RestructureText utilisée dans la documentation Sphinx et la syntaxe Mardown/MyST est indiquée sur la page 
