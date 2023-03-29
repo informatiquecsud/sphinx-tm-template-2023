@@ -1,6 +1,6 @@
 class DocumentInfos:
 
-    title = u'Titre travail'
+    title = u'''Rédaction d'un rapport écrit avec Sphinx '''
     first_name = 'Nom de famille'
     last_name = 'Prénom'
     author = f'{first_name} {last_name}'

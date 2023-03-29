@@ -4,8 +4,8 @@
     contain the root `toctree` directive.
     
 
-Programmation dynamique
-=======================
+Rédaction d'un rapport écrit avec Sphinx
+########################################
 
 ..  toctree::
     :maxdepth: 2
@@ -17,23 +17,7 @@ Programmation dynamique
     conclusion.rst
     references.rst
 
-..
-    ..  toctree::
-        :maxdepth: 2
-        :caption: Table des matières
 
-        plan.rst
-        
-
-..
-    ..  toctree::
-        :maxdepth: 2
-        :caption: Tutoriel Sphinx
-
-        tutoriel-sphinx/index.rst
-
-
-..
     Indices and tables
     ==================
 
