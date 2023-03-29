@@ -15,6 +15,7 @@ Rédaction d'un rapport écrit avec Sphinx
     mise-en-route.md
     conclusion.md
     references.rst
+    declaration-honneur.md
 
 
     Indices and tables

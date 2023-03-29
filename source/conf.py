@@ -120,18 +120,33 @@ latex_elements = {
 %\setlength{\cftsecnumwidth}{1.25cm}
 \usepackage{marginnote}
 \usepackage{qrcode}
+\usepackage{setspace}
 \usepackage{hyperref}
 \newcommand{\seminarytitle}{<<seminary_title>>}
 \newcommand{\customizeinfos}{<<customize_infos>>}
 \newcommand{\thedate}{<<the_date>>}
+\newcommand{\studentfirstname}{<<firstname>>}
+\newcommand{\studentlastname}{<<lastname>>}
+\newcommand{\studentaddress}{<<address>>}
+\newcommand{\tmtitle}{<<title>>}
 """.replace(
         "<<seminary_title>>", infos.seminary_title
     ).replace(
         "<<customize_infos>>",
-        r"Modifiez les informations de cette page dans le fichier {\verb source/infos.py}"
+    r"Modifiez les informations de cette page dans le fichier {\verb source/infos.py}"
         if infos.first_name == "Prénom"
         else "",
-    ).replace('<<the_date>>', infos.the_date),
+    ).replace(
+        '<<the_date>>', infos.the_date
+    ).replace(
+        '<<firstname>>', infos.first_name
+    ).replace(
+        '<<lastname>>', infos.last_name
+    ).replace(
+        '<<address>>', infos.address
+    ).replace(
+        '<<title>>', infos.title
+    )
 }
 
 # Grouping the document tree into LaTeX files. List of tuples

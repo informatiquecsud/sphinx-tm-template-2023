@@ -1,8 +1,9 @@
 class DocumentInfos:
 
     title = u'''Rédaction d'un rapport écrit avec Sphinx '''
-    first_name = 'Donner'
-    last_name = 'Cédric'
+    first_name = 'Cédric'
+    last_name = 'Donner'
+    address = u'Chemin des Combes 26, 1630 Bulle'
     author = f'{first_name} {last_name}'
     the_date = f'Le 29 mars 2023'
     year = u'2023'
