@@ -97,7 +97,14 @@ html_theme_options = {
 
 
 ####### MyST configuration
-myst_enable_extensions = ["colon_fence"]
+myst_enable_extensions = [
+    "colon_fence",
+    #"linkify",
+    "dollarmath",
+    "amsmath",
+    "smartquotes",
+    "replacements",
+]
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -153,7 +160,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    ("index", "prog-dynamique.tex", infos.title, infos.author, "manual"),
+    ("index", "tm-ecrit.tex", infos.title, infos.author, "manual"),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of

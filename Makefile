@@ -8,7 +8,7 @@ SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = build
 
-TARGET = prog-dynamique
+TARGET = tm-ecrit
 
 PDFVIEWER = explorer.exe
 
@@ -58,4 +58,4 @@ getpdf: tmpdf
 	cp -f build/latex/$(TARGET).pdf .
 
 surge: html
-	surge build/html gyminf-ads2-dp.surge.sh
+	surge build/html csud-sphinx-tm.surge.sh
