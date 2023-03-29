@@ -123,6 +123,7 @@ latex_elements = {
 \usepackage{hyperref}
 \newcommand{\seminarytitle}{<<seminary_title>>}
 \newcommand{\customizeinfos}{<<customize_infos>>}
+\newcommand{\thedate}{<<the_date>>}
 """.replace(
         "<<seminary_title>>", infos.seminary_title
     ).replace(
@@ -130,7 +131,7 @@ latex_elements = {
         r"Modifiez les informations de cette page dans le fichier {\verb source/infos.py}"
         if infos.first_name == "Prénom"
         else "",
-    ),
+    ).replace('<<the_date>>', infos.the_date),
 }
 
 # Grouping the document tree into LaTeX files. List of tuples

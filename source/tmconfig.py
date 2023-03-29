@@ -4,6 +4,7 @@ class DocumentInfos:
     first_name = 'Donner'
     last_name = 'Cédric'
     author = f'{first_name} {last_name}'
+    the_date = f'Le 29 mars 2023'
     year = u'2023'
     month = u'Mars'
     seminary_title = u'Développement Web'
