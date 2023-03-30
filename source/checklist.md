@@ -1,6 +1,6 @@
 (checklist.md)=
 
-# Checklist avant de rendre le travail {bdg-warning}`Mis à jour 30 mars 13:56`
+# Checklist avant de rendre le travail {bdg-danger}`Mis à jour 30 mars 23:05`
 
 ## À vérifier avant de rendre le travail
 
@@ -33,4 +33,6 @@ Avant de rendre votre travail, vérifiez les éléments suivants
 - Imprimez le rapport écrit en deux exemplaires. Imprimez le document en
   **recto-verso**.
 
-- 
+- {bdg-warning}`ajouté le 30 mars 23:04` Rendre une version anonymisée de votre
+  document selon le guide du TM pour le passer dans le logiciel de contrôle
+  anti-plagiat Compilatio.

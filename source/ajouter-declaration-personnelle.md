@@ -3,7 +3,7 @@
 # Ajouter la déclaration personnelle {bdg-warning}`Mis à jour 30 mars 13:33`
 
 ```{warning} 
-Cette section comportait une erreur et a été mis à jour.
+Cette section comportait une erreur et a été mise à jour.
 ```
 
 Dans cette section, nous allons voir comment ajouter la déclaration personnelle
