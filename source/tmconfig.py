@@ -1,9 +1,9 @@
 class DocumentInfos:
 
-    title = u'''Rédaction d'un rapport écrit avec Sphinx '''
-    first_name = 'Cédric'
-    last_name = 'Donner'
-    address = u'Chemin des Combes 26, 1630 Bulle'
+    title = u'''Rédaction d'un rapport écrit avec Sphinx'''
+    first_name = 'Jules'
+    last_name = 'Tartempion'
+    address = u'Chemin des Allouettes 45, 1700 Fribourg'
     author = f'{first_name} {last_name}'
     the_date = f'Le 29 mars 2023'
     year = u'2023'
@@ -17,4 +17,4 @@ class DocumentInfos:
     def date(cls):
         return cls.month + " " + cls.year
 
-infos = DocumentInfos()
+tmconfig = DocumentInfos()

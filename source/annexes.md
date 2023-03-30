@@ -1,3 +1,5 @@
+(ajouter_annexes)=
+
 # Ajouter des annexes
 
 Pour ajouter un annexe, il suffit d'ajouter un nouveau chapitre à la fin de la

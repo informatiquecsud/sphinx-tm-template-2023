@@ -16,17 +16,17 @@ import sys
 
 sys.path.insert(0, os.path.abspath("."))
 
-from tmconfig import infos
+from tmconfig import tmconfig
 
 
 # -- Project information -----------------------------------------------------
 
-project = infos.title
-author = infos.author
-copyright = f"{infos.year}, {author}"
+project = tmconfig.title
+author = tmconfig.author
+copyright = f"{tmconfig.year}, {author}"
 
 # The full version, including alpha/beta/rc tags
-release = infos.release
+release = tmconfig.release
 
 
 # -- General configuration ---------------------------------------------------
@@ -82,7 +82,7 @@ html_theme = "sphinx_book_theme"
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
 
-html_title = infos.title
+html_title = tmconfig.title
 html_logo = "logo.png"
 html_favicon = "favicon.png"
 
@@ -90,7 +90,7 @@ html_theme_options = {
     "home_page_in_toc": True,
     "use_download_button": True,
     "show_navbar_depth": 1,
-    "repository_url": infos.repository_url,
+    "repository_url": tmconfig.repository_url,
     # "use_issues_button": True,
     "use_edit_page_button": True,
 }
@@ -112,10 +112,10 @@ myst_enable_extensions = [
 
 latex_elements = {
     "papersize": "a4",
-    "author": infos.author,
-    "date": infos.date(),
-    "title": infos.title,
-    "release": infos.release,
+    "author": tmconfig.author,
+    "date": tmconfig.date(),
+    "title": tmconfig.title,
+    "release": tmconfig.release,
     "releasename": "Travail de maturité",
     "fontpkg": "\\usepackage{times}",
     "babel": "\\usepackage[francais]{babel}",
@@ -137,22 +137,22 @@ latex_elements = {
 \newcommand{\studentaddress}{<<address>>}
 \newcommand{\tmtitle}{<<title>>}
 """.replace(
-        "<<seminary_title>>", infos.seminary_title
+        "<<seminary_title>>", tmconfig.seminary_title
     ).replace(
         "<<customize_infos>>",
-    r"Modifiez les informations de cette page dans le fichier {\verb source/infos.py}"
-        if infos.first_name == "Prénom"
+    r"Modifiez les informations de cette page dans le fichier {\verb source/tmconfig.py}"
+        if tmconfig.first_name == "Prénom"
         else "",
     ).replace(
-        '<<the_date>>', infos.the_date
+        '<<the_date>>', tmconfig.the_date
     ).replace(
-        '<<firstname>>', infos.first_name
+        '<<firstname>>', tmconfig.first_name
     ).replace(
-        '<<lastname>>', infos.last_name
+        '<<lastname>>', tmconfig.last_name
     ).replace(
-        '<<address>>', infos.address
+        '<<address>>', tmconfig.address
     ).replace(
-        '<<title>>', infos.title
+        '<<title>>', tmconfig.title
     )
 }
 
@@ -160,7 +160,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    ("index", "tm-ecrit.tex", infos.title, infos.author, "manual"),
+    ("index", "tm-ecrit.tex", tmconfig.title, tmconfig.author, "manual"),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of

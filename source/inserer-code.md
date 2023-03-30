@@ -1,3 +1,5 @@
+(inserer_code)=
+
 # Insérer du code source
 
 Pour insérer du code dans le document, il faut éviter de faire des captures
@@ -64,10 +66,9 @@ La directive `code-block` permet d'intégrer du code sans avoir à faire une
 capture d'écran. Par exemple, pour produire le code
 
 ```{code-block} python
----
-linenos: true
-emphasize-lines: 3
----
+:linenos: true
+:emphasize-lines: 3
+
 from math import pi
 
 print(pi)
@@ -77,10 +78,9 @@ on peut utiliser la syntaxe
 
 ````md
 ```{code-block} python
----
-linenos: true
-emphasize-lines: 3
----
+:linenos: true
+:emphasize-lines: 3
+
 from math import pi
 
 print(pi)
@@ -107,26 +107,98 @@ Pour insérer les lignes 1 à 10 du fichier `conf.py` en insérant les numéros 
 
 ````md
 ```{literalinclude} requirements.txt
----
-linenos: true
-language: txt
-lines: 1-10
-emphasize-lines: 3-5
-caption: requirements.txt
----
+:linenos: true
+:language: txt
+:lines: 1-10
+:emphasize-lines: 3-5
+:caption: requirements.txt
 ```
 ````
 
 Cela produit le résultat suivant:
 
-```{literalinclude} ../requirements.txt
----
-linenos: true
-language: txt
-lines: 1-10
-emphasize-lines: 3-5
-caption: requirements.txt
----
+```{literalinclude} requirements.txt
+:linenos: true
+:language: txt
+:lines: 1-10
+:emphasize-lines: 3-5
+:caption: requirements.txt
 ```
 
 `````
+
+## Montrer les différences entre deux codes
+
+Les directives `code-block` permettent de mettre en évidence des modifications
+dans un code pour montrer son évolution par rapport à un état précédemment
+discuté. Pour cela, il y a deux solutions. La première consiste à utiliser
+l'option `emphasize-lines` pour mettre certaines lignes en évidence
+manuellement. 
+
+
+
+`````{admonition} Exemple
+Admettons que l'on ait déjà présenté le code permettant de calculer les nombres de Fibonacci de manière récursive
+
+````{code-block} python
+:linenos: true
+:caption: fib.py
+
+def fibonacci(n: int) -> int:
+    if n == 0:
+        return 1
+    else:
+        value = fibonacci(n - 1) + fibonacci(n - 2)
+        return value
+````
+
+Pour optimiser l'algorithme, on veut rajouter de la mémoïsation pour éviter de
+calculer plusieurs fois les mêmes termes et éviter une explosion de l'arbre des appels récursifs:
+
+````{code-block} python
+:linenos: true
+:caption: fib.py
+:emphasize-lines: 1, 6-7, 10
+
+memo = {}
+
+def fib(n: int) -> int:
+    if n == 0:
+        return 1
+    elif n in memo:
+        return memo[n]
+    else:
+        value = fib(n - 1) + fib(n - 2)
+        memo[n] = value
+        return value
+         
+print(fib(80))
+````
+
+`````
+
+
+
+Cela convient bien lorsqu'il n'y a que quelques lignes à rajouter. C'est
+toutefois nettement moins pratique s'il faut supprimer des lignes. Admettons que
+l'on veut expliquer comment utiliser le module `functools` pour réaliser la
+mémoïsation à l'aide d'un cache LRU. Pour cela on peut utiliser l'option `diff`
+pour afficher la différence avec le code précédent:
+
+
+```{literalinclude} files/fibonacci_lrucache.py
+:diff: files/fibonacci_memo.py
+:caption: Modifications à apporter pour utiliser le cache LRU
+```
+
+Pour pouvoir générer ce diff, il faut le fichier d'origine et le fichier modifié
+et inclure le fichier modifié (ici `files/fibonacci_lrucache.py`) en spécifiant
+qu'il faut faire le diff avec le fichier d'origine (ici
+`files/fibonacci_memo.py`)
+
+````md
+```{literalinclude} files/fibonacci_lrucache.py
+:diff: files/fibonacci_memo.py
+:caption: Modifications à apporter pour utiliser le cache LRU
+```
+````

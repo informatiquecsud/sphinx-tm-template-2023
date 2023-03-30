@@ -18,9 +18,12 @@ Rédaction d'un rapport écrit avec Sphinx
     inserer-maths.md
     annexes.md
     ajouter-declaration-personnelle.md
+    inserer-pdf.md
+    checklist.md
     conclusion.md
     references.rst
     declaration-honneur.md
+    code-source.md
 
 
 Indices and tables
