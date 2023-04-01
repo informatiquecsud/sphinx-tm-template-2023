@@ -1,6 +1,6 @@
 (checklist.md)=
 
-# Checklist avant de rendre le travail {bdg-danger}`Mis à jour 30 mars 23:05`
+# Checklist avant de rendre le travail {bdg-danger}`Mis à jour le 1er avril 15:03`
 
 ## À vérifier avant de rendre le travail
 
@@ -28,6 +28,12 @@ Avant de rendre votre travail, vérifiez les éléments suivants
   en particulier le formatage de la date (à corriger, car elle apparaît de
   manière bizarre dans le template fourni)
 
+- {bdg-danger}`ajouté le 1er avril 15:02` Des instructions très claires sur la
+  manière de tester votre code doivent figurer dans le fichier `Readme.md` de
+  votre dépôt contenant le projet. Vous pouvez bien entendu supposer que nous
+  pouvons utiliser gitpod ou stackblitz pour ce faire. Cela est particulièrement
+  important s’il faut faire des manipulations non standards.
+
 ## Rendre le travail
 
 - Imprimez le rapport écrit en deux exemplaires. Imprimez le document en
@@ -36,3 +42,10 @@ Avant de rendre votre travail, vérifiez les éléments suivants
 - {bdg-warning}`ajouté le 30 mars 23:04` Rendre une version anonymisée de votre
   document selon le guide du TM pour le passer dans le logiciel de contrôle
   anti-plagiat Compilatio.
+
+- {bdg-danger}`ajouté le 1er avril 15:02` Déposez une version électronique de votre travail dans un dossier nommé
+  `Version finale TM` dans votre dossier personnel sur Teams.
+
+- {bdg-danger}`ajouté le 1er avril 15:02` Dans le même dossier `Version finale
+  TM`, mettez également un lien vers chacun de vos dépôts Github, par exemple
+  dans un document Word Readme.docx.
