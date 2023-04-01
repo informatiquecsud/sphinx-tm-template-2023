@@ -1,6 +1,6 @@
 (checklist.md)=
 
-# Checklist avant de rendre le travail {bdg-danger}`Mis à jour le 1er avril 15:03`
+# Checklist avant de rendre le travail {bdg-danger}`Mis à jour le 1er avril 21:21`
 
 ## À vérifier avant de rendre le travail
 
@@ -33,6 +33,20 @@ Avant de rendre votre travail, vérifiez les éléments suivants
   votre dépôt contenant le projet. Vous pouvez bien entendu supposer que nous
   pouvons utiliser gitpod ou stackblitz pour ce faire. Cela est particulièrement
   important s’il faut faire des manipulations non standards.
+
+- {bdg-danger}`ajouté le 1er avril 21:21` Il faut corriger l'année du copyright
+  dans le fichier `conf.py` autour de la ligne 25:
+
+  % TODO: Modifer cette config dans le fichier conf.py pour les années suivantes
+
+  ```{code-block} python
+  :emphasize-lines: 3
+  :caption: conf.py (ligne 25)
+
+  project = tmconfig.title
+  author = tmconfig.author
+  copyright = f'{tmconfig.year}, {author}'
+  ```
 
 ## Rendre le travail
 
