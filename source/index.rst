@@ -20,6 +20,7 @@ Rédaction d'un rapport écrit avec Sphinx
     ajouter-declaration-personnelle.md
     inserer-pdf.md
     checklist.md
+    test-travaux.md
     conclusion.md
     references.rst
     declaration-honneur.md
